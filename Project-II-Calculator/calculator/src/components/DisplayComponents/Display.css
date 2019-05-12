@@ -1,0 +1,9 @@
+.calc-display {
+  height: auto;
+  width: 20em;
+  background: gray;
+}
+
+#buttons {
+  display: flex;
+}
