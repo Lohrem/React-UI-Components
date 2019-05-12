@@ -1,10 +1,8 @@
 import React from 'react';
 import './Button.css';
 
-// const ActionBtns = () => {
-//   return (
-
-//   )
-// }
-
-export default ActionBtns
+export const ActionBtns = props => {
+  return (
+    <button className="actionBtn btn" onClick={() => props.handleClick(props.children)}>{props.children}</button>
+  )
+}

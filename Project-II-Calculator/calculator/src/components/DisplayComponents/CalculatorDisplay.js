@@ -4,7 +4,7 @@ import '../ButtonComponents/Button.css'
 import { NumberBtns } from '../ButtonComponents/NumberButton'
 import { Input } from '../InputComponent/input'
 import * as math from 'mathjs'
-// import ActionBtns from '../ButtonComponents/ActionButton'
+import { ActionBtns } from '../ButtonComponents/ActionButton'
 
 export class Display extends Component {
   constructor (props) {
@@ -48,11 +48,11 @@ export class Display extends Component {
               <NumberBtns id="zero" className="btn numbers" handleClick={this.addToInput}>0</NumberBtns>
           </div>
           <div className="action-btns">
-            <button className="actionBtn btn" value="/" name="divide">/</button>
-            <button className="actionBtn btn" value="*" name="times">*</button>
-            <button className="actionBtn btn" value="-" name="minus">-</button>
-            <button className="actionBtn btn" value="+" name="plus">+</button>
-            <button className="actionBtn btn" value="=" name="equal" onClick={() => this.handleEqual()}>=</button>
+            <ActionBtns className="actionBtn btn" handleClick={this.addToInput} name="divide">/</ActionBtns>
+            <ActionBtns className="actionBtn btn" handleClick={this.addToInput} name="times">*</ActionBtns>
+            <ActionBtns className="actionBtn btn" handleClick={this.addToInput} name="minus">-</ActionBtns>
+            <ActionBtns className="actionBtn btn" handleClick={this.addToInput} name="plus">+</ActionBtns>
+            <ActionBtns className="actionBtn btn" value="=" name="equal" onClick={() => this.handleEqual()}>=</ActionBtns>
           </div>
           </div>
         </div>
