@@ -3,18 +3,7 @@
   width: 20em;
   background: gray;
 }
-.total {
-  width: 100%;
-  height: 60px;
-  background: black;
-  color: white;
-  border: none;
-}
-.total::-webkit-inner-spin-button,
-.total::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
+
 #buttons {
   display: flex;
 }
